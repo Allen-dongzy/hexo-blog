@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ""
-description: ""
+title: TechLine
+subtitle: "董正阳的博客"
+description: "个人成长的记录"
 keywords:
-author: John Doe
-language: en
+author: 董正阳
+language: zh-CN
 timezone: ""
 
 # URL
