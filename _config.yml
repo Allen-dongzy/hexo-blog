@@ -40,7 +40,7 @@ external_link:
   exclude: ""
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -113,3 +113,39 @@ search:
   field: all
   content: true
   template: ./search.xml
+
+aplayer:
+  meting: true
+
+# movies
+douban:
+  user: 184097135
+  builtin: true
+  book:
+    title: "书籍"
+    quote: "董正阳的书籍"
+    meta: true
+    comments: true
+    top_img: /img/top-img.jpg
+    aside: true
+    path: books
+    limit:
+  movie:
+    title: "电影"
+    quote: "董正阳的电影"
+    meta: true
+    comments: true
+    top_img: /img/top-img.jpg
+    aside: true
+    path: movies
+    limit:
+  game:
+    title: "游戏"
+    quote: "董正阳的游戏"
+    meta: true
+    comments: true
+    top_img: /img/top-img.jpg
+    aside: true
+    path: games
+    limit:
+  timeout: 10000
