@@ -8,7 +8,7 @@ top_img: https://i.loli.net/2019/12/25/8t97aVlp4hgyBGu.jpg
 欢迎来到漫威图集
 {% endnote %}
 
-{% meting "500399011" "netease" "song" "autoplay" "mutex:true" "listmaxheight:1000px" "preload:auto" "theme:#49b1f5"%}
+{% meting "500399011" "netease" "song" %}
 
 {% gallery %}
 ![](https://i.loli.net/2019/12/25/Jj8FXuKVlOea4Ec.jpg)

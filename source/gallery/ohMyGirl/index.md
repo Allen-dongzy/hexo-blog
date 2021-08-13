@@ -8,7 +8,7 @@ top_img: https://i.loli.net/2019/12/25/hOqbQ3BIwa6KWpo.jpg
 欢迎来到OH MY GIRL图集
 {% endnote %}
 
-{% meting "1815389717" "netease" "song" "autoplay" "mutex:true" "listmaxheight:1000px" "preload:auto" "theme:#49b1f5"%}
+{% meting "1815389717" "netease" "song" %}
 
 {% gallery %}
 ![](https://i.loli.net/2019/12/25/Fze9jchtnyJXMHN.jpg)

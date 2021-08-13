@@ -13,6 +13,7 @@
     "version": "5.4.0"
   },
   "dependencies": {
+    "gulp-html-minifier-terser": "^6.0.1",
     "hexo": "^5.0.0",
     "hexo-browsersync": "^0.3.0",
     "hexo-deployer-git": "^3.0.0",
@@ -34,8 +35,18 @@
     "hexo-wordcount": "^6.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
-    "husky": "^7.0.1"
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlclean": "^2.7.22",
+    "gulp-imagemin": "7.1.0",
+    "gulp-uglify": "^3.0.2",
+    "husky": "^7.0.1",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-optipng": "^8.0.0"
   }
 }

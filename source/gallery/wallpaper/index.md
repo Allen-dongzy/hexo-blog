@@ -8,7 +8,7 @@ top_img: https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png
 欢迎来到壁纸图集
 {% endnote %}
 
-{% meting "30830198" "netease" "song" "autoplay" "mutex:true" "listmaxheight:1000px" "preload:auto" "theme:#49b1f5"%}
+{% meting "30830198" "netease" "song" %}
 
 {% gallery %}
 ![](https://i.loli.net/2019/11/10/lP3rLNUBaGtSVzc.png)

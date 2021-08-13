@@ -116,6 +116,7 @@ search:
 
 aplayer:
   meting: true
+  asset_inject: false
 
 # movies
 douban:

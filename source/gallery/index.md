@@ -8,7 +8,7 @@ top_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/Photo/photo.jpg
 欢迎来到我的画廊
 {% endnote %}
 
-{% meting "493283657" "netease" "song" "autoplay" "mutex:true" "listmaxheight:1000px" "preload:auto" "theme:#49b1f5"%}
+{% meting "493283657" "netease" "song" %}
 
 <div class="gallery-group-main">
 {% galleryGroup '壁纸' '收藏的一些壁纸' '/gallery/wallpaper' https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png %}
