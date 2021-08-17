@@ -97,6 +97,9 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
+plugins:
+  - hexo-algoliasearch
+
 theme: butterfly
 
 # Deployment
@@ -150,3 +153,20 @@ douban:
     path: games
     limit:
   timeout: 10000
+
+# 搜索
+algolia:
+  appId: "QBT8HGGVCH"
+  apiKey: "6b64c8b1dd600adf0fea958b7bf22240"
+  adminApiKey: "364213bac1249536c38e0dffc802e014"
+  indexName: "search_tech_line"
+  chunkSize: 5000
+  fields:
+    - content:strip:truncate,0,500
+    - excerpt:strip
+    - gallery
+    - permalink
+    - photos
+    - slug
+    - tags
+    - title
