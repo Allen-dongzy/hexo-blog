@@ -1,14 +1,15 @@
 ---
 title: husky+prettier的使用方法
 date: 2021-08-17 15:32:47
+top_img: top-img.png
+cover: cover.png
 tags:
   - npm插件
   - husky
   - prettier
 categories:
-  - 教程
-  - npm插件
-  - prettier
+  - [教程, npm插件, prettier]
+  - [教程, npm插件, husky]
 description: 使用husky+prettier在git commit提交前进行代码格式化操作
 ---
 

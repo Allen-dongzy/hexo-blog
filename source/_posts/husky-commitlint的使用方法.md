@@ -1,14 +1,15 @@
 ---
 title: husky+commitlint的使用方法
 date: 2021-08-17 15:22:35
+top_img: top-img.png
+cover: cover.png
 tags:
   - npm插件
   - husky
   - commitlint
 categories:
-  - 教程
-  - npm插件
-  - commitlint
+  - [教程, npm插件, commitlint]
+  - [教程, npm插件, husky]
 description: 使用husky+commitlint来拦截不合法的git commit提交
 ---
 
