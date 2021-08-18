@@ -4,7 +4,7 @@ date: 2021-08-12 15:08:32
 ---
 
 {% note info no-icon %}
-欢迎来到纯音乐列表
+欢迎来到流行轻有氧列表
 {% endnote %}
 
-{% meting "2927963993" "netease" "playlist" %}
+{% meting "7256920196" "tencent" "playlist" %}
