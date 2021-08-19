@@ -130,7 +130,7 @@ douban:
     quote: "董正阳的书籍"
     meta: true
     comments: true
-    top_img: /img/top-img.jpg
+    top_img: /images/top-img.jpg
     aside: true
     path: books
     limit:
@@ -139,7 +139,7 @@ douban:
     quote: "董正阳的电影"
     meta: true
     comments: true
-    top_img: /img/top-img.jpg
+    top_img: /images/top-img.jpg
     aside: true
     path: movies
     limit:
@@ -148,7 +148,7 @@ douban:
     quote: "董正阳的游戏"
     meta: true
     comments: true
-    top_img: /img/top-img.jpg
+    top_img: /images/top-img.jpg
     aside: true
     path: games
     limit:
