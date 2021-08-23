@@ -1,8 +1,8 @@
 ---
 title: { { title } }
 date: { { date } }
-top_img: index.png
-cover: index.png
+top_img: top-img.png
+cover: cover.png
 tags:
 categories:
 description:
