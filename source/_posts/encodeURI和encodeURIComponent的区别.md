@@ -13,15 +13,14 @@ description: encodeURI和encodeURIComponent的具体使用场景
 
 ## encodeURI、decodeURI、encodeURIComponent 和 decodeURIComponent 之间的关系
 
-- `encodeURI`不会对本身属于`URI`的特殊字符进行编码，例如冒号":"、正斜杠"/"、问号"?"和井字号"#"；
-
+- `encodeURI`不会对本身属于`URI`的特殊字符进行编码，例如冒号":"、正斜杠"/"、问号"?"和井字号"#"。
 - `encodeURIComponent`则会对它发现的任何非标准字符进行编码。
-- `decodeURI`和`decodeURIComponent`是解除对应编码的
+- `decodeURI`和`decodeURIComponent`是解除对应编码的。
 
 ## 常用适用范围
 
-- `encodeURI`：适用于编码一个 url。
-- `encodeURIComponent`：适用于编码 url 中的含有 params 参数的 url。
+- `encodeURI`: 适用于编码一个 url。
+- `encodeURIComponent`: 适用于编码 url 中的 params 的参数。
 
 ## 举例
 
