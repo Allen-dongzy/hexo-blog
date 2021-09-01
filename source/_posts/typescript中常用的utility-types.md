@@ -7,7 +7,7 @@ tags:
   - typescript
   - utility-type
 categories:
-  - [typescript, utility-type]
+  - [教程, typescript, utility-type]
 description: 解析typescript中的utility type
 ---
 
