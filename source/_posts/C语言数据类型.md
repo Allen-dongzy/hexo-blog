@@ -37,7 +37,7 @@ description: C语言数据类型
 
 ### 变量的存储方式
 
-<img src="数据类型/NeatReader-1631082289709.png" style="zoom: 33%;" />
+<img src="variable.png" style="zoom: 33%;" />
 
 ### 值的存储方式
 
@@ -205,7 +205,6 @@ long double f = 67.45E2L
 | ---------- | ----- | ------ | ----------- |
 | 常规       | %f    | %f     | %Lf         |
 | 指数计数法 | %e    | %e     | %Le         |
-|            |       |        |             |
 
 那些未在函数原型中显式说明参数类型的函数（如，`printf()` ）传递参数时，C编译器会把`float` 类型的值自动转换成`double` 类型。例如：
 
@@ -287,7 +286,7 @@ char itable, latan;
 
 ### 字符的存储方式
 
-<img src="数据类型/NeatReader-1631154453146.png" style="zoom:33%;" />
+<img src="char.png" style="zoom:33%;" />
 
 字符c的ASC II码是67，那么存入该字符时，存入的就是67的二进制(与值的存储方式原理相同，最后都是二进制)。
 
