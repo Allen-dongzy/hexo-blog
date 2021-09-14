@@ -13,7 +13,7 @@ description: C语言数据类型
 
 ## 基本数据类型汇总
 
-| 最初的标准 | C90标准 | C99标准    |
+| 最初的标准 | C89标准 | C99标准    |
 | ---------- | ------- | ---------- |
 | int        | signed  | _Bool      |
 | long       | void    | _Complex   |
@@ -23,7 +23,29 @@ description: C语言数据类型
 | float      |         |            |
 | double     |         |            |
 
-这里主要讲解C90
+这里主要讲解C89
+
+| C89标准下 | 占用字节 |
+| --------- | -------- |
+| char      | 1        |
+| short     | 2        |
+| int       | 4        |
+| unsigned  | 4        |
+| long      | 4        |
+| float     | 4        |
+| double    | 8        |
+
+使用`sizeof()`即可验证
+
+```c
+printf("%d\n", sizeof(char)); // 1
+printf("%d\n", sizeof(short)); // 2
+printf("%d\n", sizeof(int)); // 4
+printf("%d\n", sizeof(unsigned)); // 4
+printf("%d\n", sizeof(long)); // 4
+printf("%d\n", sizeof(float)); // 4
+printf("%d\n", sizeof(double)); // 8
+```
 
 ### 位，字节，字
 
