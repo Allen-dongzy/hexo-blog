@@ -17,21 +17,21 @@ description: 使用husky+prettier在git commit提交前进行代码格式化操�
 
 **yarn**
 
-```
+```shell
 // 添加prettier
 yarn add prettier --dev --exact
 ```
 
 **npm**
 
-```
+```shell
 // 添加prettier
 npm install prettier --save-dev --save-exact
 ```
 
 ## 添加.prettierrc.json 规则文件
 
-```
+```shell
 echo {}> .prettierrc.json
 ```
 
@@ -51,13 +51,13 @@ coverage
 
 如果没有安装`husky`，此步骤后将自动安装`husky`并创建`pre-commit`钩子，在`git`执行到`pre-commit`时会自动执行`lint-staged`来格式化文件
 
-```
+```shell
 npx mrm@2 lint-staged
 ```
 
-安装好后，修改`package.js`中的`lint-staged`属性，配置中加入`jsx`,`ts`,`tsx`类型文件的支持
+安装好后，修改`package.json`中的`lint-staged`属性，配置中加入`jsx`,`ts`,`tsx`类型文件的支持
 
-```
+```json
 "lint-staged": {
     "*.{js,jsx,ts,tsx,css,md}": "prettier --write"
 }
@@ -69,21 +69,21 @@ npx mrm@2 lint-staged
 
 **yarn**
 
-```
+```shell
 // 添加eslint-config-prettier
 yarn add eslint-config-prettier --dev
 ```
 
 **npm**
 
-```
+```shell
 // 添加eslint-config-prettier
 npm install eslint-config-prettier --save-dev
 ```
 
 **进入`package.json`中，在`eslintConfig`的`extends`选项中添加`prettier`**
 
-```
+```json
 "eslintConfig": {
     "extends": [
       "prettier"

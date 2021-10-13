@@ -26,14 +26,14 @@ description: encodeURI和encodeURIComponent的具体使用场景
 
 **定义 `url`**
 
-```
+```javascript
 const url1 = 'http://106.54.253.194/some thing'
 const url2 = `http://106.54.253.194?params=${url1}`
 ```
 
 **原本的 `url`**
 
-```
+```javascript
 console.log(url1)
 // http://106.54.253.194/some thing
 
@@ -44,7 +44,7 @@ console.log(url2)
 
 **使用 `encodeURI` 后的 `url`**
 
-```
+```javascript
 console.log(encodeURI(url1))
 // http://106.54.253.194/some%20thing
 
@@ -54,8 +54,7 @@ console.log(encodeURI(url2))
 
 **使用 `encodeURIComponent` 后的 `url`**
 
-```
-
+```javascript
 console.log(encodeURIComponent(url1))
 // http%3A%2F%2F106.54.253.194%2Fsome%20thing
 

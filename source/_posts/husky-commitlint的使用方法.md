@@ -17,7 +17,7 @@ description: 使用husky+commitlint来拦截不合法的git commit提交
 
 **yarn**
 
-```
+```shell
 // 添加husky
 yarn add husky --dev
 // 添加commitlint
@@ -26,7 +26,7 @@ yarn add @commitlint/cli  @commitlint/config-conventional --dev
 
 **npm**
 
-```
+```shell
 // 添加husky并初始化
 npm install husky --save-dev
 // 添加commitlint
@@ -35,7 +35,7 @@ npm install @commitlint/cli @commitlint/config-conventional --save-dev
 
 ## 安装 husky 脚本
 
-```
+```shell
 npx husky install
 ```
 
@@ -43,7 +43,7 @@ npx husky install
 
 ## 注册 package.json 命令
 
-```
+```json
 // package.json
 {
   "scripts": {
@@ -56,14 +56,14 @@ npx husky install
 
 ## 添加钩子
 
-```
+```shell
 // 添加git时commit-msg钩子函数的脚本，此时commitlint奏效
 npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 ```
 
 ## 根目录添加 commitlint.config.js
 
-```
+```javascript
 module.exports = {
   extends: ['@commitlint/config-conventional']
 }
@@ -73,7 +73,7 @@ module.exports = {
 
 **`commit message: <type>: <subject>` (注意冒号后面有空格)**
 
-```
+```shell
 // 错误示例
 git add .
 git commmit -m "test"
@@ -84,7 +84,7 @@ git commmit -m "test"
 ✖   type may not be empty [type-empty]
 ```
 
-```
+```shell
 // 正确示例
 git add .
 git commmit -m "test: add test demos"

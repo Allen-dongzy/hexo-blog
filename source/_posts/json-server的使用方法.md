@@ -15,21 +15,21 @@ description: 使用json-server在本地开启mock数据库，可以随心所欲�
 
 **yarn**
 
-```
+```shell
 // 添加json-server
 yarn add json-server --dev
 ```
 
 **npm**
 
-```
+```shell
 // 添加json-server
 npm install json-server --save-dev
 ```
 
 ## 添加 json 本地数据库
 
-```
+```shell
 // 这里的users可以是任意api字段，文件夹也可以是任意的(根目录也可以)
 echo {\"users\":[]}> json-server __json_server_mock__/db.json
 ```
@@ -38,7 +38,7 @@ echo {\"users\":[]}> json-server __json_server_mock__/db.json
 
 ## 配置 package.json 文件
 
-```
+```json
 "scripts": {
   "json-server": "json-server __json_server_mock__/db.json --watch"
 }

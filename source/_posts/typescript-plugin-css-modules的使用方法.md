@@ -14,7 +14,7 @@ description: 使用typescript-plugin-css-modules插件提示module.css中的css�
 
 ## 安装
 
-```
+```shell
 yarn add typescript-plugin-css-modules --dev
 ```
 
@@ -22,7 +22,7 @@ yarn add typescript-plugin-css-modules --dev
 
 在 tsconfig.json 中的`compilerOptions`>`plugins`中配置`typescript-plugin-css-modules`插件
 
-```
+```json
 {
     "compilerOptions": {
         "plugins": [{
@@ -36,7 +36,7 @@ yarn add typescript-plugin-css-modules --dev
 
 在`vscode`中的`settings.json`中指明 ts 的 sdk 的位置以及开题 ts 提示
 
-```
+```json
 {
     "typescript.tsdk": "node_modules/typescript/lib", // ts的sdk位置
     "typescript.enablePromptUseWorkspaceTsdk": true // 开启ts提示
