@@ -137,7 +137,7 @@ git checkout -b branchName
 **git查看本地分支与远程分支的映射关系：**
 
 ```shell
-git branch -vv
+git branch -v
 ```
 
 **git修改当前分支所对应的远程默认分支：**
