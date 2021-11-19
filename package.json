@@ -48,7 +48,7 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-htmlclean": "^2.7.22",
     "gulp-uglify": "^3.0.2",
-    "husky": "^7.0.1",
+    "husky": "^7.0.4",
     "imagemin-optipng": "^8.0.0",
     "lint-staged": "^11.1.2",
     "prettier": "2.3.2",
