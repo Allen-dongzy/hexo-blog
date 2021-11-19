@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "upload": "hexo algolia",
     "build": "hexo clean & hexo generate & gulp",
     "deploy": "hexo deploy",
+    "upload": "hexo algolia",
     "server": "hexo server",
+    "auto": "yarn build & yarn deploy & yarn upload",
     "prepare": "husky install"
   },
   "hexo": {

@@ -11,7 +11,7 @@ categories:
 description: git常用命令
 ---
 
-## 创建类：
+## 创建类
 
 **初始化git本地仓库：**
 
@@ -22,33 +22,33 @@ git init
 **将git的本地仓库与远程仓库关联：**
 
 ```shell
-git remote add origin gitUrl
+git remote add origin <gitUrl>
 ```
 
 **克隆git远程仓库：**
 
 ```shell
-git clone gitUrl
+git clone <gitUrl>
 ```
 
 **克隆git远程仓库的指定分支：**
 
 ```shell
-git clone -b branchName gitUrl
+git clone -b <branchName> <gitUrl>
 ```
 
-## 常用操作类：
+## 常用操作类
 
 **git添加到暂存区：**
 
 ```shell
-git add fileName
+git add <fileName>
 ```
 
 **git提交到本地仓库：**
 
 ```shell
-git commit -m "commitMessage"
+git commit -m "<commitMessage>"
 ```
 
 **git第一次提交到远程仓库(默认master分支)：**
@@ -66,10 +66,10 @@ git push
 **git提交到远程仓库指定分支：**
 
 ```shell
-git push origin branchName
+git push origin <branchName>
 ```
 
-## 查看类：
+## 查看类
 
 **查看git状态：**
 
@@ -89,7 +89,7 @@ git log
 git reflog
 ```
 
-## 分支操作类：
+## 分支操作类
 
 **查看git当前所在分支：**
 
@@ -100,38 +100,38 @@ git branch
 **git创建新分支：**
 
 ```shell
-git branch branchName
+git branch <branchName>
 ```
 
 
 **git创建没有指向的新分支：**
 
 ```shell
-git checkout --orphan branchName
+git checkout --orphan <branchName>
 ```
 
 **git删除本地分支**
 
 ```shell
-git branch -d branchName
+git branch -d <branchName>
 ```
 
 **git删除远程分支**
 
 ```shell
-git push origin -d branchName
+git push origin -d <branchName>
 ```
 
 **切换git分支：**
 
 ```shell
-git checkout branchName
+git checkout <branchName>
 ```
 
 **git创建新分支并切换到该分支：**
 
 ```shell
-git checkout -b branchName
+git checkout -b <branchName>
 ```
 
 **git查看本地分支与远程分支的映射关系：**
@@ -143,7 +143,7 @@ git branch -v
 **git修改当前分支所对应的远程默认分支：**
 
 ```shell
-git branch --set-upstream-to origin/branchName
+git branch --set-upstream-to origin/<branchName>
 ```
 
 **git撤销本地分支与远程分支的映射关系：**
@@ -152,20 +152,64 @@ git branch --set-upstream-to origin/branchName
 git branch --unset-upstream
 ```
 
-## 修改类：
+## 标记类
+
+**创建本地标记：**
+
+```shell
+git tag <tagName>
+```
+
+**在指定commit上新增标记：**
+
+```shell
+git tag <tagName> <commitId>
+```
+
+**将指定本地标记推送到远程仓库：**
+
+```shell
+git push origin <tagName>
+```
+
+**将全部本地标记推送到远程仓库：**
+
+```shell
+git push origin --tags
+```
+
+**查看本地某个标记的详细信息：**
+
+```shell
+git show <tagName>
+```
+
+**查看本地所有标记：**
+
+```shell
+git tag
+```
+
+**删除指定的本地标记：**
+
+```shell
+git tag -d <tagName>
+```
+
+## 修改类
 
 **撤销暂存区(git add的产物)的内容：**
 
 ```shell
-git restore --staged fileName
+git restore --staged <fileName>
 or
-git reset HEAD fileName
+git reset HEAD <fileName>
 ```
 
 **撤销本地仓库(git commit的产物)到指定版本：**
 
 ```shell
-git reset --hard commitId
+git reset --hard <commitId>
 ```
 
 **删除所有文件：**
@@ -191,8 +235,8 @@ git remote rm origin
 **全局配置本地账户密码：**
 
 ```shell
-git config --global user.name "Your Name"
-git config --global user.email "email@example.com"
+git config --global <user.name> "<Your Name>"
+git config --global <user.email> "<email@example.com>"
 ```
 
 **查看全局配置：**
@@ -204,7 +248,7 @@ git config --list
 **删除一个全局配置：**
 
 ```shell
-git config --global --unset user.name
+git config --global --unset <user.name>
 ```
 
 **修改全局配置：**
@@ -217,6 +261,6 @@ git config --global --edit
 **单独项目配置(在项目根目录下输入)：**
 
 ```shell
-git config user.name "Your Name"
-git config user.email "email@example.com"
+git config <user.name> "<Your Name>"
+git config <user.email> "<email@example.com>"
 ```
