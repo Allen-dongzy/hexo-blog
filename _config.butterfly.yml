@@ -15,10 +15,6 @@ menu:
   娱乐 || fas fa-heartbeat:
     图库: /gallery/ || fas fa-images
     音乐: /music/ || fas fa-music
-    书籍: /books/ || fas fa-book
-    电影: /movies/ || fas fa-video
-    游戏: /games/ || fas fa-gamepad
-    说说: /shuoshuo/ || fas fa-cubes
   链接: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
 
@@ -934,13 +930,3 @@ CDN:
   prismjs_js: https://cdn.jsdelivr.net/npm/prismjs/prism.min.js
   prismjs_lineNumber_js: https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
   prismjs_autoloader: https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
-
-  # Artitalk
-  artitalk:
-    enable: true
-    appId: 3AvyKAiULFV0sjRK2lb04kFn-MdYXbMMI
-    appKey: Ne2yFbpgQvxwjYqEQUx4qWmO
-    path: shuoshuo
-    js:
-    option:
-    front_matter:

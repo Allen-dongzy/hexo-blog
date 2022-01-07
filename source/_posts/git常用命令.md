@@ -25,6 +25,12 @@ git init
 git remote add origin <gitUrl>
 ```
 
+**修改与git的本地仓库关联的远程仓库地址：**
+
+```shell
+git remote set-url origin <gitUrl>
+```
+
 **克隆git远程仓库：**
 
 ```shell
@@ -114,6 +120,12 @@ git checkout --orphan <branchName>
 
 ```shell
 git branch -d <branchName>
+```
+
+**git删除未上传的本地分支**
+
+```shell
+git branch -D <branchName>
 ```
 
 **git删除远程分支**
