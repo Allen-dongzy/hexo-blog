@@ -24,11 +24,13 @@ yarn add typescript-plugin-css-modules --dev
 
 ```json
 {
-    "compilerOptions": {
-        "plugins": [{
-            "name": "typescript-plugin-css-modules"
-        }]
-    }
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ]
+  }
 }
 ```
 
@@ -38,9 +40,38 @@ yarn add typescript-plugin-css-modules --dev
 
 ```json
 {
-    "typescript.tsdk": "node_modules/typescript/lib", // ts的sdk位置
-    "typescript.enablePromptUseWorkspaceTsdk": true // 开启ts提示
+  "typescript.tsdk": "node_modules/typescript/lib", // ts的sdk位置
+  "typescript.enablePromptUseWorkspaceTsdk": true // 开启ts提示
 }
 ```
 
-**至此，重启 `vscode`，你在项目中使用 `css moudule` 时，就可以享受到 `typescript` 提示的 `css` 属性了**
+**至此，重启 `vscode`，你在项目中使用 `css moudule` 时，就可以享受到 `typescript` 提示的 `css` 属性了。**
+
+**注意：`module css` 可以用于 `css`，`less`，`scss` 等，使用 `module css` 时，`css`/`less`/`scss` 文件必须由`.css`/`.less`/`.scss` 变为/`.module.css`/`.module.less`/`.module.scss`。**
+
+## 实例
+
+**index.tsx:**
+
+```jsx
+import React, { ReactNode } from "react";
+import styles from "./index.module.less";
+
+interface IProps {
+  children?: ReactNode;
+}
+
+const Index: React.FC<IProps> = ({ children }) => {
+  return <div className={styles.layout}>{children}</div>;
+};
+
+export default Index;
+```
+
+**index.module.less:**
+
+```less
+.layout {
+  color: red;
+}
+```
